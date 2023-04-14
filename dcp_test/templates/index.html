@@ -16,7 +16,11 @@
         <img class="index_logo_word" src="{% static 'images/logo和標準字_裁切空白處.png' %}" alt="一張圖片">
         <p class="introduce">
             寵物測驗×養寵原則
-        </p>      
+        </p>     
+        <div class="btn">
+            <input type="button" class="btn_center" name="btn_center" value="領養中心" onclick="javascript:location.href='{%url 'select_animal_center'%}'">
+            {% comment %} <input type="button" class="btn_common" name="btn_common" value="一般民眾" onclick="javascript:location.href='{%url 'select_animal_common'%}'"> {% endcomment %}
+        </div>   
     </div>
 </body>
 </html>
