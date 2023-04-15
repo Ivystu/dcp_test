@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dcp_test.apps.DcpTestConfig',
-    'dcp_test'
+    'dcp_test.apps.DcpTestConfig'
 ]
 
 MIDDLEWARE = [
