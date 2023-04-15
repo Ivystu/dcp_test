@@ -5,3 +5,6 @@ def index(request):
 
 def select_animal_center(request):
     return render(request, 'select_animal_center.html')
+
+def abc(request):
+    return render(request, 'abc.html')
