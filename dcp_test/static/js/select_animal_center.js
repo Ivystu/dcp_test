@@ -375,11 +375,11 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.btn_dog_start.on('click', function(){
-			location.href = "/dcp/story_dog";
+			location.href = "/dcp_test/story_dog";
 		});
 		
 		_this.btn_cat_start.on('click', function(){
-			location.href = "/dcp/story_cat";
+			location.href = "/dcp_test/story_cat";
 		});
 	}
 
