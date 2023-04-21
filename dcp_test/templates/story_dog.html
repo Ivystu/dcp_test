@@ -35,13 +35,13 @@
         <!-- <p>*** 愈多人使用本網站將解鎖更多養寵小知識😊 ***</p> -->       
         <div class="flex_container">
             <div class="video_story">
-                <video width="100%" autoplay muted loop>
-                    {% comment %} <source src="{% static 'story_dog.mp4' %}" type="video/mp4"> {% endcomment %}
+                {% comment %} <video width="100%" autoplay muted loop>
+                    <source src="{% static 'story_dog.mp4' %}" type="video/mp4">
                     <!-- m3u8 application/x-mpegURL 、 mp4 video/mp4 -->
                     <source src="{% static 'story_dog.ogg' %}" type="video/ogg">
                     Your browser does not support HTML5 video.
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tp8NBejwuLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </video>
+                </video> {% endcomment %}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tp8NBejwuLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="test_text_dog">
                 一個濛濛細雨的早晨，<br/>
