@@ -1,0 +1,75 @@
+/*--------------------------*/
+/*          header          */
+/*--------------------------*/
+
+.header {
+    /* background-color: var(--main-orange-light-color); */
+    /* position: relative; */
+    /* display: block; */
+    color: white;
+    text-align: center;
+}
+
+.logo_block{
+    /* position:absolute; */
+    width: auto;
+    height: auto;
+    padding: 3% 0% 0% 0%; /* margin:上 右 下 左; */
+    display: block;
+    /* text-align: center; */
+}
+
+.logo {
+    width: 7%;
+    height: auto;
+    /* display: inline; */
+    /* margin: auto; */
+    /* margin-top: 10px; */
+    float: center;
+}
+
+.logo_word {
+    width: 25%;
+    height: auto;
+    /* display:inline; */
+    /* margin:auto; */
+    /* margin-top: 10px; */
+    float: center;
+}
+
+.nav_block {
+    /* position:absolute; */
+    margin: 2% 0% 0% 0%; /* margin:上 右 下 左; */
+}
+
+nav > ul {
+    /* background-color: var(--main-orange-light-color); */
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    text-decoration: none;  /* 移除超連結底線 */
+    color: var(--main-blue-dark-color);
+}
+
+nav a:hover {
+    color: var(--main-orange-color);
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
+
+hr.line {
+    border: 0;
+    height: 1px;
+    /* background-color: var(--main-orange-light-color); */
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin-bottom: 3%;
+}

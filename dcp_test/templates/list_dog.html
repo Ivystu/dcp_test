@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">  
+    <link rel="stylesheet" href="{% static 'css/list_dog.css' %}">
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo和標準字_裁切空白處.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_dog' %}">關於我們</a></li>
+                    <li><a href="#">流浪動物們</a></li>
+                    <li><a href="{% url 'kn_dog' %}">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <img class="dog_solid" src="{% static 'images/dog_solid.svg' %}" alt="一張圖片">
+        <h2 class="text">💨流浪動物中心 | 狗狗列表</h2>
+        <p>*** 若您經評估確認想領養狗狗的話，請不要錯過我們🤗 ***</p><br/>       
+        <div class="flex_container">
+            <a href="#"><div class="list_dog_1"><img src="{% static 'images/漸層01.png' %}" alt="" class="pg_dog_1"></div></a>
+            <a href="#"><div class="list_dog_2"><img src="{% static 'images/漸層02.png' %}" alt="" class="pg_dog_2"></div></a>
+            <a href="#"><div class="list_dog_3"><img src="{% static 'images/漸層03.png' %}" alt="" class="pg_dog_3"></div></a>
+            <a href="#"><div class="list_dog_4"><img src="{% static 'images/漸層04.png' %}" alt="" class="pg_dog_4"></div></a>
+            <a href="#"><div class="list_dog_5"><img src="{% static 'images/漸層05.png' %}" alt="" class="pg_dog_5"></div></a>
+        </div>
+        <div class="flex_container_2">
+            <a href="#"><div class="list_dog_1"><img src="{% static 'images/漸層06.png' %}" alt="" class="pg_dog_1"></div></a>
+            <a href="#"><div class="list_dog_2"><img src="{% static 'images/漸層07.png' %}" alt="" class="pg_dog_2"></div></a>
+            <a href="#"><div class="list_dog_3"><img src="{% static 'images/漸層08.png' %}" alt="" class="pg_dog_3"></div></a>
+            <a href="#"><div class="list_dog_4"><img src="{% static 'images/漸層09.png' %}" alt="" class="pg_dog_4"></div></a>
+            <a href="#"><div class="list_dog_5"><img src="{% static 'images/漸層10.png' %}" alt="" class="pg_dog_5"></div></a>
+        </div>
+        <div class="flex_container_2">
+            <a href="#"><div class="list_dog_1"><img src="{% static 'images/漸層11.png' %}" alt="" class="pg_dog_1"></div></a>
+            <a href="#"><div class="list_dog_2"><img src="{% static 'images/漸層12.png' %}" alt="" class="pg_dog_2"></div></a>
+            <a href="#"><div class="list_dog_3"><img src="{% static 'images/漸層13.png' %}" alt="" class="pg_dog_3"></div></a>
+            <a href="#"><div class="list_dog_4"><img src="{% static 'images/漸層14.png' %}" alt="" class="pg_dog_4"></div></a>
+            <a href="#"><div class="list_dog_5"><img src="{% static 'images/漸層15.png' %}" alt="" class="pg_dog_5"></div></a>
+        </div>
+    </div>
+</body> 
+</body>
+</html>

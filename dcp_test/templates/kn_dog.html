@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kn_dog.css' %}">
+</head>
+
+<body onload="init();" style="margin:0px;">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo和標準字_裁切空白處.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_dog' %}">關於我們</a></li>
+                    <li><a href="{% url 'list_dog' %}">流浪動物們</a></li>
+                    <li><a href="#">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <img class="dog_solid" src="{% static 'images/dog_solid.svg' %}" alt="一張圖片">
+        <h2 class="text">💨來來來～先補充點養寵小知識吧！</h2>
+        <p>*** 愈多人使用本網站將解鎖更多養寵小知識😊 ***</p><br/>
+        <div class="flex_container">
+            <a href="{% url 'kn_dog_1' %}"><div class="kn_dog_1"><img src="{% static './images/kn_dog_1.jpg' %}" alt="" class="pg_dog_1"><span class="kn_title_unlock">知識1 | 不適應環境的行為</span></div></a>
+            <a href="{% url 'kn_dog_2' %}"><div class="kn_dog_2"><img src="{% static './images/kn_dog_2.jpg' %}" alt="" class="pg_dog_2"><span class="kn_title_unlock">知識2 | 與同伴間的相處</span></div></a>
+            <div class="kn_dog_3"><span class="kn_title_lock">🔒</span></div>
+            <div class="kn_dog_4"><span class="kn_title_lock">🔒</span></div>
+            <div class="kn_dog_5"><span class="kn_title_lock">🔒</span></div>
+        </div>
+</body>
+</html>

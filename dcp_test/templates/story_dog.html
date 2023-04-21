@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">  
+    <link rel="stylesheet" href="{% static 'css/story.css' %}">
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo和標準字_裁切空白處.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_dog' %}">關於我們</a></li>
+                    <li><a href="{% url 'list_dog' %}">流浪動物們</a></li>
+                    <li><a href="{% url 'kn_dog' %}">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <img class="dog_solid" src="{% static 'images/dog_solid.svg' %}" alt="一張圖片">
+        <h2 class="text">💨前情提要</h2><br/><br/><br/>
+        <!-- <p>*** 愈多人使用本網站將解鎖更多養寵小知識😊 ***</p> -->       
+        <div class="flex_container">
+            <div class="video_story">
+                <video width="100%" autoplay muted loop>
+                    <source src="{% static 'videos/story_dog.mp4' %}" type="video/mp4">
+                    <source src="{% static 'videos/story_dog.ogg' %}" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div class="test_text_dog">
+                一個濛濛細雨的早晨，<br/>
+                在現代都市裡的某棟公寓中，<br/>
+                坐在沙發上看著電視，<br/>
+                隨著時間流逝使眼皮逐漸沉重，<br/>
+                半夢半醒間像是被吸附到電視裡一般。<br/>
+                再次睜眼時已然變成一隻狗，<br/>
+                美好與沉重的畫面一幕幕重現在眼前，<br/>
+                恢復意識時已在車廂中，<br/>
+                向著認識自我的旅途前行......<br/><br/>
+                <!--<input type="button" class="btn_goquiz" name="btn_common" value="進入測驗" onclick="location.href='{%url 'instruction_dog'%}'">-->
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

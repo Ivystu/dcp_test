@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo和標準字_裁切空白處.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="{% url 'list_dog' %}">流浪動物們</a></li>
+                    <li><a href="{% url 'kn_dog' %}">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <h2 class="title">專題簡介</h2><br/><br/>
+        <div class="text_d">
+            <p class="text">&emsp;&emsp;為增加大眾對寵物性格之重視與了解，並讓領養中心的動物們能有更客觀的性格數據，我們主要將國外研究之性格測驗改以互動媒體的方式呈現，透過五大面向性格關卡各關之得分數導出測驗結果。依此結果讓來訪動物收容中心的領養者可看到較客觀的動物性格為何及是否符合自己心中所想，減少因性格或行為不如預期而被退養的機率；而已有飼養寵物的飼主進行測驗，也可藉此增加對自家寵物性格和行為的了解。<br/><br/>
+                            &emsp;&emsp;此外，遊戲前會顯示幾項寵物小知識，讓飼主了解到不同性格的動物在同一情況下會出現不同的反應及行為，從而理解行為背後的原因。<br/><br/>
+                            &emsp;&emsp;最後期望與領養中心合作，於網頁列出流浪動物檔案，將測驗結果融入檔案介紹，增加牠們被欲領養動物之民眾看見的機會。</p><br/><br/> 
+        </div>
+        <hr class="line" />
+        <br/><h2 class="title">LOGO設計理念</h2><br/><br/>
+        <div class="logo_design">
+            <img src="{% static 'images/0305_logo設計理念.svg' %}" alt="一張圖片"> 
+        </div>
+    </div>   
+</body>
+</html>
