@@ -17,3 +17,6 @@ def kn_dog(request):
 
 def list_dog(request):
     return render(request, 'list_dog.html')
+
+def quiz_dog_3(request):
+    return render(request, 'quiz_dog_3.html')
