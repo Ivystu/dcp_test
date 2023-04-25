@@ -1,0 +1,271 @@
+/*--------------------------*/
+/*         content          */
+/*--------------------------*/
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 0.5;}
+}
+
+@keyframes fadeout {
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 1;}
+    60% {opacity: 0.6;}
+}
+
+.content {
+    /* width: 100%;
+    height: 100%; */
+    /*margin:  15% 0% 5% 0%;*/ /* margin:上 右 下 左; */
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: block;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background-color: var(--neutral-light-color);
+}
+
+.dog_solid {
+    width: 5%;
+    height: auto;
+    margin:auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.text {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*--------------------------*/
+/*      flex_container      */
+/*--------------------------*/
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: var(--main-orange-light-color); */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2% 0 2% 0;
+}
+
+.flex_container_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0% 0 2% 0;
+}
+
+.pg_dog_1, .pg_dog_2, .pg_dog_3, .pg_dog_4, .pg_dog_5{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* a {
+    color: inherit;
+    text-decoration: none;
+} */
+
+/*--------------------------*/
+/*          偽元素           */
+/*--------------------------*/
+/* .list_dog_1:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a品種：混種狗\a性別：公\a體型： MEDIUM\a顏色：黑白色\a年紀：幼年\a結紮：已結紮\a狂犬病疫苗：已施打\a';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_dog_1:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/dog_1.jpg);
+    background-size: cover;
+}
+
+.list_dog_2:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a品種：混種狗\a性別：公\a體型：MEDIUM\a顏色：虎斑色\a年紀：成年\a結紮：未結紮\a狂犬病疫苗：未施打\a';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_dog_2:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/dog_2.jpg);
+    background-size: cover;
+}
+
+.list_dog_3:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a品種：混種狗\a性別：母\a體型：MEDIUM\a顏色：三色花\a年紀：幼年\a結紮：未結紮\a狂犬病疫苗：未施打\a';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_dog_3:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/dog_3.jpg);
+    background-size: cover;
+}
+
+.list_dog_4:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a品種：混種狗\a性別：母\a體型：SMALL\a顏色：黑色\a年紀：幼年\a結紮：未結紮\a狂犬病疫苗：未施打\a';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_dog_4:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/dog_4.jpg);
+    background-size: cover;
+}
+
+.list_dog_5:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a品種：混種狗\a性別：公\a體型：MEDIUM\a顏色：虎斑色\a年紀：幼年\a結紮：未結紮\a狂犬病疫苗：未施打\a';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_dog_5:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/dog_5.jpg);
+    background-size: cover;
+} */
+
+/*--------------------------*/
+
+.list_dog_1, .list_dog_2, .list_dog_3, .list_dog_4, .list_dog_5 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    margin: 0% 0% 5% 0%;  
+}

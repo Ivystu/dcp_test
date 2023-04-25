@@ -14,6 +14,7 @@
 <title>寵則計畫</title>
 {% load static %}
 <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+<link rel="preload" as="script" href="https://code.createjs.com/1.0.0/createjs.min.js"/>
 <!-- write your code here -->
 <style>
   #animation_container {
@@ -23,13 +24,14 @@
 	top:0;bottom:0;
   }
 </style>
+
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("3F71CD4A0C16084BB96147CDEF366A8E");
+	var comp=AdobeAn.getComposition("AAB11096AE9D694A8066407C387D1D8D");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
@@ -50,7 +52,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.select_animal_center();
+	exportRoot = new lib.kn_dog_1();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -74,9 +76,7 @@ function handleComplete(evt,comp) {
 		</div>
 	</div>
 
-	{% comment %} <script src="https://code.createjs.com/1.0.0/createjs.min.js'"></script> {% endcomment %}
-	<script type="text/javascript" src="{% static 'js/createjs.min.js' %}" defer></script>
-	<script type="text/javascript" src="{% static 'js/select_animal_center.js' %}" defer></script>
-
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="{% static 'js/kn_dog_1.js' %}"></script>
 </body>
 </html>

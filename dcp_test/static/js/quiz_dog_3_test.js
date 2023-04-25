@@ -39,7 +39,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2501,246);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,2524,443);
 
-
+/*
 (lib.CachedBmp_131 = function() {
 	this.initialize(ss["quiz_dog_3_atlas_3"]);
 	this.gotoAndStop(0);
@@ -71,7 +71,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2524,443);
 (lib.CachedBmp_127 = function() {
 	this.initialize(ss["quiz_dog_3_atlas_3"]);
 	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
+}).prototype = p = new cjs.Sprite();*/
 
 
 
@@ -80,7 +80,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2524,443);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,244,2161);
 
-
+/*
 (lib.CachedBmp_125 = function() {
 	this.initialize(ss["quiz_dog_3_atlas_3"]);
 	this.gotoAndStop(5);
@@ -161,7 +161,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,244,2161);
 (lib.CachedBmp_202 = function() {
 	this.initialize(ss["quiz_dog_3_atlas_2"]);
 	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
+}).prototype = p = new cjs.Sprite();*/
 
 
 
@@ -176,11 +176,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,3802,1059);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,3971,1233);
 
-
+/*
 (lib.CachedBmp_200 = function() {
 	this.initialize(ss["quiz_dog_3_atlas_1"]);
 	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
+}).prototype = p = new cjs.Sprite();*/
 
 
 
@@ -480,19 +480,19 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// 圖層_3
-	this.instance = new lib.CachedBmp_129();
-	this.instance.setTransform(60.1,-52.75,0.5,0.5);
+	// this.instance = new lib.CachedBmp_129();
+	// this.instance.setTransform(60.1,-52.75,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(6));
+	// this.timeline.addTween(cjs.Tween.get(this.instance).wait(6));
 
 	// 圖層_2
-	this.instance_1 = new lib.CachedBmp_131();
-	this.instance_1.setTransform(1042.25,103.8,0.5,0.5);
+	// this.instance_1 = new lib.CachedBmp_131();
+	// this.instance_1.setTransform(1042.25,103.8,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_130();
-	this.instance_2.setTransform(60.05,103.8,0.5,0.5);
+	// this.instance_2 = new lib.CachedBmp_130();
+	// this.instance_2.setTransform(60.05,103.8,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1}]}).wait(6));
+	// this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1}]}).wait(6));
 
 	// 圖層_1
 	this.instance_3 = new lib.CachedBmp_208();
@@ -1334,7 +1334,7 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_191 = function() {
 		var _this = this;		
-		location.href="/dcp_test/test_result_dog";
+		location.href="http://www.adobe.com";
 	}
 
 	// actions tween:

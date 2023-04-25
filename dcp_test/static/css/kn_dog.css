@@ -1,0 +1,254 @@
+/*--------------------------*/
+/*         content          */
+/*--------------------------*/
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 0.5;}
+}
+
+@keyframes fadeout {
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 1;}
+    60% {opacity: 0.6;}
+}
+
+.content {
+    /* width: 100%;
+    height: 100%; */
+    /*margin:  15% 0% 5% 0%;*/ /* margin:上 右 下 左; */
+    padding-top: 3%;
+    display: block;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background-color: var(--neutral-light-color);
+}
+
+.dog_solid {
+    width: 5%;
+    height: auto;
+    margin:auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.text {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*--------------------------*/
+/*      flex_container      */
+/*--------------------------*/
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: var(--main-orange-light-color); */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5% 0%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.kn_title_unlock {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-110%, 35%); */
+}
+
+.kn_title_lock {
+    /* display: block; */
+    text-align: center;
+    line-height: 200px; 
+    color: var(--main-blue-light-color);
+    font-size: 200%;
+}
+
+.kn_dog_2:hover .kn_title_unlock, .kn_dog_1:hover .kn_title_unlock {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    text-align: center;
+    /* line-height: 200px; */
+    color: black;
+    font-weight: bold;
+}
+
+.pg_dog_2, .pg_dog_1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.pg_dog_2:hover, .pg_dog_1:hover{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.2;
+    border-radius: 20px;
+}
+
+/* 
+.kn_title_unlock:hover .pg_dog_1{
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+} */
+
+.kn_dog_1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    margin: 0% 0% 5% 0%;
+    /* 要用background-image的話下面的註解拿掉即可 */
+    /* display: flex; */
+    /* background-color: var(--main-orange-color); */
+    /* background-image: url("../images/kn_dog_1.jpg"); */
+    /* background-size: cover; */
+    /* background-position: -30px bottom; */    
+}
+
+.kn_dog_1:hover {
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;  
+    /* background-image: url("../images/kn_dog_1.jpg");    */
+    /* background-color: var(--main-orange-color); */
+    /* opacity: 0.4; */
+    /* animation: fadeout 0.5s ease-out; */
+    /* background-size: cover; */
+    /* background-position: -30px bottom; */
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), url("../images/kn_dog_1.jpg")); */
+    
+    /* background:#fff; */
+    /* background:linear-gradient(top,#ffffff,rgba(51,51,51,0.3)),url("../images/kn_dog_1.jpg") -30px bottom;
+    background:-moz-linear-gradient(top,#ffffff,rgba(51,51,51,0.3)),url("../images/kn_dog_1.jpg") -30px bottom;
+    background:-webkit-linear-gradient(top,#ffffff,rgba(51,51,51,0.3)),url("../images/kn_dog_1.jpg") -30px bottom; */
+}
+
+.kn_dog_2 {
+    /* display: flex; */
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;
+    /* background-color: var(--main-orange-color);
+    background-image: url("../images/kn_dog_2.jpg");
+    background-size: cover;
+    background-position: -70px bottom; */
+    border-radius: 20px;
+    position: relative;
+}
+
+.kn_dog_2:hover {
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;  
+    /* background-image: url("../images/kn_dog_2.jpg");    */
+    /* background-color: var(--main-orange-color); */
+    /* opacity: 0.4; */
+    /* animation: fadeout 0.5s ease-out; */
+    /* position: relative; */
+}
+
+.kn_dog_3 {
+    /* display: flex; */
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;
+    background-color: var(--main-blue-dark-color);
+    opacity: 0.6;
+    border-radius: 10px;
+    position: relative;
+}
+
+.kn_dog_4 {
+    /* display: flex; */
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;
+    background-color: var(--main-blue-dark-color);
+    opacity: 0.6;
+    border-radius: 10px;
+    position: relative;
+}
+
+.kn_dog_5 {
+    /* display: flex; */
+    width: 200px;
+    height: 200px;
+    margin: 0% 0% 5% 0%;
+    background-color: var(--main-blue-dark-color);
+    opacity: 0.6;
+    border-radius: 10px;
+    position: relative;
+}
+
+.test_overlap {
+    /* position: relative; */
+    display:flex; justify-content:center; align-items:center;
+}
+
+.logo_test {
+    width: 10%;
+    height: auto;
+    /* display: inline; */
+    /* margin: auto; */
+    /* margin-top: 10px; */
+    /* float: center; */
+    display:flex; justify-content:center; align-items:center;
+    /* position: absolute; */
+}
+
+.logo_test {
+    /* position: absolute;
+    z-index: 1; */
+    display:flex; justify-content:center; align-items:center;
+}
+
+.test_text {
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* .testp{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    top: 90px;
+} */
+
+.test_back {
+    padding-top: 65%;
+}
+
+#animation_container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right:0;
+    top: 165%;
+    bottom:0;
+    /* float: left; */
+}
