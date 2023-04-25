@@ -1604,7 +1604,7 @@ lib.properties = {
 		{src:"/static/images/quiz_dog_3/CachedBmp_198.png?1682281192731", id:"CachedBmp_198"},
 		{src:"/static/images/quiz_dog_3/CachedBmp_197.png?1682281192731", id:"CachedBmp_197"},
 		{src:"/static/images/quiz_dog_3/CachedBmp_196.png?1682281192731", id:"CachedBmp_196"},
-		{src:"/static/images/test_img/_3_1_2_entrance.jpg?1682281192731", id:"_3_1_2_entrance"},
+		{src:"/static/images/quiz_dog_3/_3_1_2_entrance.jpg?1682281192731", id:"_3_1_2_entrance"},
 		{src:"/static/images/quiz_dog_3/guide_img.jpg?1682281192731", id:"guide_img"},
 		{src:"/static/images/quiz_dog_3/oval.png?1682281192731", id:"oval"},
 		{src:"/static/images/quiz_dog_3/quiz_dog_3_atlas_1.png?1682281192633", id:"quiz_dog_3_atlas_1"},
