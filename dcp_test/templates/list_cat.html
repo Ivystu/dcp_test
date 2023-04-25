@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/list_cat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">  
+    
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo_word.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_cat' %}">關於我們</a></li>
+                    <li><a href="#">流浪動物們</a></li>
+                    <li><a href="{% url 'kn_cat' %}">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <img class="cat_solid" src="{% static 'images/cat_solid.svg' %}" alt="一張圖片">
+        <h2 class="text">💨流浪動物中心 | 貓咪列表</h2>
+        <p>*** 若您經評估確認想領養狗狗的話，請不要錯過我們🤗 ***</p><br/>       
+        <h1>北部</h1>
+        <div class="flex_container">
+            <a href="#"><div class="list_cat_1"><img src="{% static 'images/gr_07.png' %}" alt="" class="pg_cat_1"></div></a>
+            <a href="#"><div class="list_cat_2"><img src="{% static 'images/gr_04.png' %}" alt="" class="pg_cat_2"></div></a>
+            <a href="#"><div class="list_cat_3"><img src="{% static 'images/gr_03.png' %}" alt="" class="pg_cat_3"></div></a>
+            <a href="#"><div class="list_cat_4"><img src="{% static 'images/gr_10.png' %}" alt="" class="pg_cat_4"></div></a>
+            <a href="#"><div class="list_cat_5"><img src="{% static 'images/gr_13.png' %}" alt="" class="pg_cat_5"></div></a>
+        </div>
+        <hr class="line" />
+        <h1>中部</h1>
+        <div class="flex_container_2">
+            <a href="#"><div class="list_cat_1"><img src="{% static 'images/gr_08.png' %}" alt="" class="pg_cat_1"></div></a>
+            <a href="#"><div class="list_cat_2"><img src="{% static 'images/gr_01.png' %}" alt="" class="pg_cat_2"></div></a>
+            <a href="#"><div class="list_cat_3"><img src="{% static 'images/gr_11.png' %}" alt="" class="pg_cat_3"></div></a>
+            <a href="#"><div class="list_cat_4"><img src="{% static 'images/gr_02.png' %}" alt="" class="pg_cat_4"></div></a>
+            <a href="#"><div class="list_cat_5"><img src="{% static 'images/gr_15.png' %}" alt="" class="pg_cat_5"></div></a>
+        </div>
+        <hr class="line" />
+        <h1>南部</h1>
+        <div class="flex_container_2">
+            <a href="#"><div class="list_cat_1"><img src="{% static 'images/gr_09.png' %}" alt="" class="pg_cat_1"></div></a>
+            <a href="#"><div class="list_cat_2"><img src="{% static 'images/gr_06.png' %}" alt="" class="pg_cat_2"></div></a>
+            <a href="#"><div class="list_cat_3"><img src="{% static 'images/gr_12.png' %}" alt="" class="pg_cat_3"></div></a>
+            <a href="#"><div class="list_cat_4"><img src="{% static 'images/gr_05.png' %}" alt="" class="pg_cat_4"></div></a>
+            <a href="#"><div class="list_cat_5"><img src="{% static 'images/gr_14.png' %}" alt="" class="pg_cat_5"></div></a>
+        </div>
+    </div>
+</body> 
+</body>
+</html>

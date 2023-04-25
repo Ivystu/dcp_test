@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static './css/main.css' %}">
+    <link rel="stylesheet" href="{% static './css/menu.css' %}">
+    <link rel="stylesheet" href="{% static './css/kn_cat.css' %}">
+</head>
+
+<body style="margin:0px;">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo_word.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_cat' %}">關於我們</a></li>
+                    <li><a href="{% url 'list_cat' %}">流浪動物們</a></li>
+                    <li><a href="#">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">            
+        <img class="cat_solid" src="{% static 'images/cat_solid.svg' %}" alt="一張圖片">
+        <h2 class="text">💨來來來～先補充點養寵小知識吧！</h2>
+        <p>*** 愈多人使用本網站將解鎖更多養寵小知識😊 ***</p><br/>
+        <div class="flex_container">
+            {% comment %} <a href="{% url 'kn_cat_1' %}"><div class="kn_cat_1"><img src="{% static './images/kn_cat_1.png' %}" alt="" class="pg_cat_1"><span class="kn_title_unlock_cat">知識1 | 護食行為</span></div></a> {% endcomment %}
+            {% comment %} <a href="{% url 'kn_cat_2' %}"><div class="kn_cat_2"><img src="{% static './images/kn_cat_2.png' %}" alt="" class="pg_cat_2"><span class="kn_title_unlock_cat">知識2 | 逗貓棒使用手冊</span></div></a> {% endcomment %}
+            <div class="kn_cat_3"><span class="kn_title_lock">🔒</span></div>
+            <div class="kn_cat_4"><span class="kn_title_lock">🔒</span></div>
+            <div class="kn_cat_5"><span class="kn_title_lock">🔒</span></div>
+        </div>
+    </div>   
+</body>
+</html>

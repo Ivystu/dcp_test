@@ -1,0 +1,271 @@
+/*--------------------------*/
+/*         content          */
+/*--------------------------*/
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 0.5;}
+}
+
+@keyframes fadeout {
+    /* 50% {opacity: 0.5;} */
+    100% {opacity: 1;}
+    60% {opacity: 0.6;}
+}
+
+.content {
+    /* width: 100%;
+    height: 100%; */
+    /*margin:  15% 0% 5% 0%;*/ /* margin:上 右 下 左; */
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: block;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background-color: var(--neutral-light-color);
+}
+
+.cat_solid {
+    width: 4%;
+    height: auto;
+    margin:auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.text {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*--------------------------*/
+/*      flex_container      */
+/*--------------------------*/
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: var(--main-orange-light-color); */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2% 0 2% 0;
+}
+
+.flex_container_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0% 0 2% 0;
+}
+
+.pg_cat_1, .pg_cat_2, .pg_cat_3, .pg_cat_4, .pg_cat_5{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* a {
+    color: inherit;
+    text-decoration: none;
+} */
+
+/*--------------------------*/
+/*          偽元素           */
+/*--------------------------*/
+.list_cat_1:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a編號：A1111126\a暱稱：金爐\a花色：黑\a公母：母\a毛髮長度：短毛';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_cat_1:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/cat_1.jpg);
+    background-size: cover;
+}
+
+.list_cat_2:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a編號：A111015\a暱稱：芋禾\a花色：灰白\a公母：母\a毛髮長度：短毛\a備註說明：腹瀉不止的美短貓, 每天要洗澡，不定期灌食，\a　　　　　長期醫療，需要幫忙';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_cat_2:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/cat_2.jpg);
+    background-size: cover;
+}
+
+.list_cat_3:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a編號：A110047\a暱稱：大蘿蔔\a花色：虎斑\a公母：公\a毛髮長度：短毛\a備註說明：第一次接觸有點緊張, 熟了以後就是奶人貓 會討罐, \a　　　　　也喜歡逗貓棒，各種罐頭會負責掃盤';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_cat_3:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/cat_3.jpg);
+    background-size: cover;
+}
+
+.list_cat_4:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a編號：E21037\a暱稱：柏拉圖\a花色：虎斑白\a公母：母\a毛髮長度：短毛\a備註說明：貓友抓到的小浪貓，有點害羞, 目前訓練跟人玩逗貓棒中, \a　　　　　希望假以時日，可以進步到給摸';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_cat_4:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/cat_4.jpg);
+    background-size: cover;
+}
+
+.list_cat_5:hover::before {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    font-size: .8em;
+    background: var(--neutral-dark-color);
+    padding: 10px 20px 20px 130px;
+    border-radius: 10px;
+    content: '🟡外向75%🟢溫順35%🟤謹慎83%🔵冷靜90%🟣親和50%\a-------------------------------------------------------------------------------\a編號：E21002\a暱稱：來來 【尿結石】\a花色：黃\a公母：公\a毛髮長度：短毛\a備註說明：約10歲親人親貓的貓，被人丟棄躲在樓梯間，\a　　　　　不敢走開的貓，希望能找到家';
+    white-space: pre;
+    text-align: left;
+}
+
+.list_cat_5:hover::after {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    object-fit: cover;
+    top: 110px;
+    left: 110px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    content: '';
+    background-image: url(../images/cat_5.jpg);
+    background-size: cover;
+}
+
+/*--------------------------*/
+
+.list_cat_1, .list_cat_2, .list_cat_3, .list_cat_4, .list_cat_5 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    margin: 0% 0% 5% 0%;  
+}
