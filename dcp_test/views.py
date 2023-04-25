@@ -12,6 +12,9 @@ def select_animal_common(request):
 def story_dog(request):
     return render(request, 'story_dog.html')
 
+def story_cat(request):
+    return render(request, 'story_cat.html')
+
 def aboutus_dog(request):
     return render(request, 'aboutus_dog.html')
 

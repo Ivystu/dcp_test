@@ -6,6 +6,7 @@ urlpatterns = [
     path('select_animal_center/', views.select_animal_center, name="select_animal_center"),
     path('select_animal_common/', views.select_animal_common, name="select_animal_common"),
     path('story_dog/', views.story_dog, name="story_dog"),
+    path('story_cat/', views.story_cat, name="story_cat"),
     path('aboutus_dog/', views.aboutus_dog, name="aboutus_dog"),
     path('aboutus_cat/', views.aboutus_cat, name="aboutus_cat"),
     path('kn_dog/', views.kn_dog, name="kn_dog"),
