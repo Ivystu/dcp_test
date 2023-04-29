@@ -24,14 +24,20 @@ def aboutus_cat(request):
 def kn_dog(request):
     return render(request, 'kn_dog.html')
 
+def kn_cat(request):
+    return render(request, 'kn_cat.html')
+
 def kn_dog_1(request):
     return render(request, 'kn_dog_1.html')
 
 def kn_dog_2(request):
     return render(request, 'kn_dog_2.html')
 
-def kn_cat(request):
-    return render(request, 'kn_cat.html')
+def kn_cat_1(request):
+    return render(request, 'kn_cat_1.html')
+
+def kn_cat_2(request):
+    return render(request, 'kn_cat_2.html')
 
 def list_dog(request):
     return render(request, 'list_dog.html')
@@ -39,11 +45,14 @@ def list_dog(request):
 def list_cat(request):
     return render(request, 'list_cat.html')
 
-def quiz_dog_3(request):
-    return render(request, 'quiz_dog_3.html')
+def instruction_cat(request):
+    return render(request, 'instruction_cat.html')
 
 def instruction_dog(request):
     return render(request, 'instruction_dog.html')
 
-def test_result_dog(request):
-    return render(request, 'test_result_dog.html')
+def info_dog_1(request):
+    return render(request, 'info_dog_1.html')
+
+def info_cat_1(request):
+    return render(request, 'info_cat_1.html')

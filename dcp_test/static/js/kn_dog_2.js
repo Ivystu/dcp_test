@@ -1195,7 +1195,6 @@ if (reversed == null) { reversed = false; }
 		
 		_this.enter_story_btn.on('click', function(){
 			location.href="/dcp_test/story_dog";
-			// window.open('http://www.adobe.com', '_blank');
 		});
 	}
 	this.frame_73 = function() {
@@ -1401,11 +1400,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"/static/images/CachedBmp_172.png", id:"CachedBmp_172"},
-		{src:"/static/images/kn_dog_2_atlas_1.png", id:"kn_dog_2_atlas_1"},
-		{src:"/static/images/kn_dog_2_atlas_2.png", id:"kn_dog_2_atlas_2"},
-		{src:"/static/images/kn_dog_2_atlas_3.png", id:"kn_dog_2_atlas_3"},
-		{src:"/static/images/kn_dog_2_atlas_4.png", id:"kn_dog_2_atlas_4"}
+		{src:"/static/images/kn_dog/CachedBmp_172.png", id:"CachedBmp_172"},
+		{src:"/static/images/kn_dog/kn_dog_2_atlas_1.png", id:"kn_dog_2_atlas_1"},
+		{src:"/static/images/kn_dog/kn_dog_2_atlas_2.png", id:"kn_dog_2_atlas_2"},
+		{src:"/static/images/kn_dog/kn_dog_2_atlas_3.png", id:"kn_dog_2_atlas_3"},
+		{src:"/static/images/kn_dog/kn_dog_2_atlas_4.png", id:"kn_dog_2_atlas_4"}
 	],
 	preloads: []
 };

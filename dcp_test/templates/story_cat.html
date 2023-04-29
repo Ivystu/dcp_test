@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>寵則計畫</title>
     {% load static %}
-    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> <!--標籤頁圖示-->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/menu.css' %}">  
     <link rel="stylesheet" href="{% static 'css/story.css' %}">
@@ -23,7 +23,7 @@
                 <ul class="flex-nav">
                     <li><a href="{% url 'aboutus_cat' %}">關於我們</a></li>
                     <li><a href="{% url 'list_cat' %}">流浪動物們</a></li>
-                    <li><a href="kn_cat.html">養寵知識</a></li>
+                    <li><a href="{% url 'kn_cat' %}">養寵知識</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +47,7 @@
                 美好與沉重的畫面一幕幕重現在眼前，<br/>
                 恢復意識時已在車廂中，<br/>
                 向著認識自我的旅途前行......<br/><br/>
-                {% comment %} <input type="button" class="btn_goquiz" name="btn_common" value="進入測驗" onclick="location.href='{%url 'instruction_cat'%}'"> {% endcomment %}
+                <input type="button" class="btn_goquiz" name="btn_common" value="進入測驗" onclick="location.href='{%url 'instruction_cat'%}'">
             </div>
         </div>
     </div>   

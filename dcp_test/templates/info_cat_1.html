@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵則計畫</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> <!--標籤頁圖示-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">  
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="logo_block" style="cursor:pointer;" onclick="location.href='{% url 'index' %}'">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="一張圖片">
+            <img class="logo_word" src="{% static 'images/logo_word.png' %}" alt="一張圖片">
+        </div>
+        <div class="nav_block">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="{% url 'aboutus_cat' %}">關於我們</a></li>
+                    <li><a href="{% url 'list_cat' %}">流浪動物們</a></li>
+                    <li><a href="{% url 'kn_cat' %}">養寵知識</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="line" />
+    </div>        
+    <div class="content">               
+        <div class="flex_container">
+            <div class="cat_1"></div>
+            <div class="information_1">
+                <div class="circle_1"></div><span class="degree">外向75%</span></br>
+                <div class="circle_2"></div><span class="degree">謹慎83%</span></br>
+                <div class="circle_3"></div><span class="degree">冷靜90%</span></br>
+                <div class="circle_4"></div><span class="degree">親和50%</span></br>
+                <div class="circle_5"></div><span class="degree">溫順35%</span></br></br></br>
+                <a class="link" target="_blank" href="http://www.lovecat.org.tw/cat_show_101">請點這裡找到我！</a>
+            </div>
+            <div class="information_2">
+                <div class="list"></div><span class="description">編號：A1111126</span></br>
+                <div class="list"></div><span class="description">暱稱：金爐</span></br>
+                <div class="list"></div><span class="description">花色：黑</span></br>
+                <div class="list"></div><span class="description">公母：母</span></br>
+                <div class="list"></div><span class="description">毛髮長度：短毛</span>
+            </div>            
+        </div>
+    </div>   
+</body>
+</html>
