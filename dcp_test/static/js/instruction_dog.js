@@ -944,7 +944,7 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.skip_btn.on('click', function(){
-			location.href="/dcp_test/quiz_dog_3"; /* 待改 */
+			location.href="https://dcp-dog.vercel.app/dcp_dog/quiz_dog_1/";
 		});
 	}
 	this.frame_28 = function() {
@@ -989,7 +989,7 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.finish_teach_btn.on('click', function(){
-			location.href="/dcp_test/quiz_dog_3"; /* 待改 */
+			location.href="https://dcp-dog.vercel.app/dcp_dog/quiz_dog_1/";
 		});
 	}
 
