@@ -54,5 +54,29 @@ def instruction_dog(request):
 def info_dog_1(request):
     return render(request, 'info_dog_1.html')
 
+def info_dog_2(request):
+    return render(request, 'info_dog_2.html')
+
+def info_dog_3(request):
+    return render(request, 'info_dog_3.html')
+
+def info_dog_4(request):
+    return render(request, 'info_dog_4.html')
+
+def info_dog_5(request):
+    return render(request, 'info_dog_5.html')
+
 def info_cat_1(request):
     return render(request, 'info_cat_1.html')
+
+def info_cat_2(request):
+    return render(request, 'info_cat_2.html')
+
+def info_cat_3(request):
+    return render(request, 'info_cat_3.html')
+
+def info_cat_4(request):
+    return render(request, 'info_cat_4.html')
+
+def info_cat_5(request):
+    return render(request, 'info_cat_5.html')

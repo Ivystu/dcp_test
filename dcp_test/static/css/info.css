@@ -45,7 +45,43 @@ div.cat_1 {
     display: block;
     width: 200px;
     height: 200px;
-    background-image: url("../images/cat_1.jpg");
+    background-image: url("../images/cat_1_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.cat_2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/cat_2_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.cat_3 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/cat_3_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.cat_4 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/cat_4_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.cat_5 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/cat_5_cut.jpg");
     background-size: cover;
     border-radius: 5%;
 }
@@ -54,7 +90,43 @@ div.dog_1 {
     display: block;
     width: 200px;
     height: 200px;
-    background-image: url("../images/dog_1.jpg");
+    background-image: url("../images/dog_1_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.dog_2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dog_2_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.dog_3 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dog_3_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.dog_4 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dog_4_cut.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+div.dog_5 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/dog_5_cut.jpg");
     background-size: cover;
     border-radius: 5%;
 }
@@ -65,34 +137,89 @@ div.information_1, div.information_2 {
     /* background-color: aqua; */
 }
 
-div.circle_1, div.circle_2, div.circle_3, div.circle_4, div.circle_5 {
+div.cat_1_circle_1, div.cat_1_circle_2, div.cat_1_circle_3, div.cat_1_circle_4, div.cat_1_circle_5,
+div.cat_2_circle_1, div.cat_2_circle_2, div.cat_2_circle_3, div.cat_2_circle_4, div.cat_2_circle_5,
+div.cat_3_circle_1, div.cat_3_circle_2, div.cat_3_circle_3, div.cat_3_circle_4, div.cat_3_circle_5,
+div.cat_4_circle_1, div.cat_4_circle_2, div.cat_4_circle_3, div.cat_4_circle_4, div.cat_4_circle_5,
+div.cat_5_circle_1, div.cat_5_circle_2, div.cat_5_circle_3, div.cat_5_circle_4, div.cat_5_circle_5,
+div.dog_1_circle_1, div.dog_1_circle_2, div.dog_1_circle_3, div.dog_1_circle_4, div.dog_1_circle_5,
+div.dog_2_circle_1, div.dog_2_circle_2, div.dog_2_circle_3, div.dog_2_circle_4, div.dog_2_circle_5,
+div.dog_3_circle_1, div.dog_3_circle_2, div.dog_3_circle_3, div.dog_3_circle_4, div.dog_3_circle_5,
+div.dog_4_circle_1, div.dog_4_circle_2, div.dog_4_circle_3, div.dog_4_circle_4, div.dog_4_circle_5,
+div.dog_5_circle_1, div.dog_5_circle_2, div.dog_5_circle_3, div.dog_5_circle_4, div.dog_5_circle_5 {
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-bottom: 5px;
+    margin-right: 3px;
     border-radius: 50%;
     white-space: nowrap;
+    box-shadow: 0px 0px 3px 2px #767575;
 }
 
-div.circle_1 {
-    background-color: rgb(255, 240, 196);
-}
+/* cat */
 
-div.circle_2 {
-    background-color: rgb(237, 255, 196);
-}
+div.cat_1_circle_1 {background-color: rgb(255, 217, 101);}
+div.cat_1_circle_2 {background-color: rgb(231, 145, 47);}
+div.cat_1_circle_3 {background-color: rgb(63, 52, 211);}
+div.cat_1_circle_4 {background-color: rgb(222, 171, 215);}
+div.cat_1_circle_5 {background-color: rgb(104, 78, 40);}
 
-div.circle_3 {
-    background-color: rgb(255, 219, 196);
-}
+div.cat_2_circle_1 {background-color: rgb(255, 240, 196);}
+div.cat_2_circle_2 {background-color: rgb(238, 125, 3);}
+div.cat_2_circle_3 {background-color: rgb(77, 31, 186);}
+div.cat_2_circle_4 {background-color: rgb(125, 86, 113);}
+div.cat_2_circle_5 {background-color: rgb(104, 78, 40);}
 
-div.circle_4 {
-    background-color: rgb(196, 220, 255);
-}
+div.cat_3_circle_1 {background-color: rgb(255, 196, 18);}
+div.cat_3_circle_2 {background-color: rgb(90, 46, 25);}
+div.cat_3_circle_3 {background-color: rgb(33, 48, 180);}
+div.cat_3_circle_4 {background-color: rgb(79, 61, 74);}
+div.cat_3_circle_5 {background-color: rgb(117, 49, 49);}
 
-div.circle_5 {
-    background-color: rgb(254, 196, 255);
-}
+div.cat_4_circle_1 {background-color: rgb(251, 230, 109);}
+div.cat_4_circle_2 {background-color: rgb(238, 125, 3);}
+div.cat_4_circle_3 {background-color: rgb(33, 48, 180);}
+div.cat_4_circle_4 {background-color: rgb(255, 164, 235);}
+div.cat_4_circle_5 {background-color: rgb(168, 248, 129);}
+
+div.cat_5_circle_1 {background-color: rgb(255, 228, 77);}
+div.cat_5_circle_2 {background-color: rgb(231, 145, 47);}
+div.cat_5_circle_3 {background-color: rgb(77, 31, 186);}
+div.cat_5_circle_4 {background-color: rgb(255, 164, 235);}
+div.cat_5_circle_5 {background-color: rgb(67, 115, 46);}
+
+/* dog */
+
+div.dog_1_circle_1 {background-color: rgb(255, 213, 88);}
+div.dog_1_circle_2 {background-color: rgb(89, 148, 49);}
+div.dog_1_circle_3 {background-color: rgb(86, 55, 20);}
+div.dog_1_circle_4 {background-color: rgb(96, 44, 210);}
+div.dog_1_circle_5 {background-color: rgb(227, 137, 231);}
+
+div.dog_2_circle_1 {background-color: rgb(161, 215, 249);}
+div.dog_2_circle_2 {background-color: rgb(148, 22, 22);}
+div.dog_2_circle_3 {background-color: rgb(74, 46, 17);}
+div.dog_2_circle_4 {background-color: rgb(56, 30, 203);}
+div.dog_2_circle_5 {background-color: rgb(143, 90, 144);}
+
+div.dog_3_circle_1 {background-color: rgb(161, 215, 249);}
+div.dog_3_circle_2 {background-color: rgb(112, 163, 76);}
+div.dog_3_circle_3 {background-color: rgb(99, 61, 16);}
+div.dog_3_circle_4 {background-color: rgb(41, 55, 136);}
+div.dog_3_circle_5 {background-color: rgb(217, 117, 212);}
+
+div.dog_4_circle_1 {background-color: rgb(253, 229, 97);}
+div.dog_4_circle_2 {background-color: rgb(126, 202, 72);}
+div.dog_4_circle_3 {background-color: rgb(194, 119, 22);}
+div.dog_4_circle_4 {background-color: rgb(43, 78, 231);}
+div.dog_4_circle_5 {background-color: rgb(234, 124, 228);}
+
+div.dog_5_circle_1 {background-color: rgb(255, 213, 88);}
+div.dog_5_circle_2 {background-color: rgb(148, 22, 22);}
+div.dog_5_circle_3 {background-color: rgb(118, 73, 25);}
+div.dog_5_circle_4 {background-color: rgb(59, 43, 231);}
+div.dog_5_circle_5 {background-color: rgb(143, 90, 144);}
 
 span {
     vertical-align: top;

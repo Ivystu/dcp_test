@@ -20,5 +20,13 @@ urlpatterns = [
     path('instruction_cat/', views.instruction_cat, name="instruction_cat"),
     path('instruction_dog/', views.instruction_dog, name="instruction_dog"),
     path('info_dog_1/', views.info_dog_1, name="info_dog_1"),
+    path('info_dog_2/', views.info_dog_2, name="info_dog_2"),
+    path('info_dog_3/', views.info_dog_3, name="info_dog_3"),
+    path('info_dog_4/', views.info_dog_4, name="info_dog_4"),
+    path('info_dog_5/', views.info_dog_5, name="info_dog_5"),
     path('info_cat_1/', views.info_cat_1, name="info_cat_1"),
+    path('info_cat_2/', views.info_cat_2, name="info_cat_2"),
+    path('info_cat_3/', views.info_cat_3, name="info_cat_3"),
+    path('info_cat_4/', views.info_cat_4, name="info_cat_4"),
+    path('info_cat_5/', views.info_cat_5, name="info_cat_5"),
 ]

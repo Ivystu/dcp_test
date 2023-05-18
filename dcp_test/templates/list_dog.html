@@ -32,32 +32,34 @@
     <div class="content">            
         <img class="dog_solid" src="{% static 'images/dog_solid.svg' %}" alt="一張圖片">
         <h2 class="text">💨流浪動物中心 | 狗狗列表</h2>
-        <p>*** 若您經評估確認想領養狗狗的話，請不要錯過我們🤗 ***</p><br/> 
-        <h1>北部</h1>      
+        {% comment %} <p>*** 若您經評估確認想領養狗狗的話，請不要錯過我們🤗 ***</p><br/>  {% endcomment %}
+        <p class="explain">以下列出合作的領養中心的狗狗測驗結果，圖示呈現方式為：測驗結果最具代表的兩項性格之相對應顏色。<br/>
+            滑鼠移至圖示上方即出現狗狗實際照片，點擊後便可深入了解相關資訊，若有興趣領養可再點擊連結至領養中心的官方網站，方便您與他們聯繫。</p><br/>       
+        <h1>北部</h1>
         <div class="flex_container">
-            <a href="{% url 'info_dog_1' %}"><div class="list_dog_1"><img src="{% static 'images/list_circle/gr_03.png' %}" alt="" class="pg_dog_1"></div></a>
-            <a href="#"><div class="list_dog_2"><img src="{% static 'images/list_circle/gr_01.png' %}" alt="" class="pg_dog_2"></div></a>
-            <a href="#"><div class="list_dog_3"><img src="{% static 'images/list_circle/gr_02.png' %}" alt="" class="pg_dog_3"></div></a>
-            <a href="#"><div class="list_dog_4"><img src="{% static 'images/list_circle/gr_04.png' %}" alt="" class="pg_dog_4"></div></a>
-            <a href="#"><div class="list_dog_5"><img src="{% static 'images/list_circle/gr_05.png' %}" alt="" class="pg_dog_5"></div></a>
+            <div class="list_dog_1"><a href="{% url 'info_dog_1' %}"><img src="{% static 'images/list_icon/dog_06.jpg' %}" alt="" class="pg_dog_1"></a>外向 88%</br>親和 73%</div>
+            <div class="list_dog_2"><a href="{% url 'info_dog_2' %}"><img src="{% static 'images/list_icon/dog_01.jpg' %}" alt="" class="pg_dog_2"></a>謹慎 88%</br>外向 20%</div>
+            <div class="list_dog_3"><a href="{% url 'info_dog_3' %}"><img src="{% static 'images/list_icon/dog_02.jpg' %}" alt="" class="pg_dog_3"></a>親和 83%</br>外向 22%</div>
+            <div class="list_dog_4"><a href="{% url 'info_dog_4' %}"><img src="{% static 'images/list_icon/dog_03.jpg' %}" alt="" class="pg_dog_4"></a>溫順 87%</br>謹慎 10%</div>
+            <div class="list_dog_5"><a href="{% url 'info_dog_5' %}"><img src="{% static 'images/list_icon/dog_04.jpg' %}" alt="" class="pg_dog_5"></a>外向 89%</br>謹慎 80%</div>
         </div>
         <hr class="line" />
         <h1>中部</h1>
-        <div class="flex_container_2">
-            <a href="#"><div class="list_dog_1"><img src="{% static 'images/list_circle/gr_06.png' %}" alt="" class="pg_dog_1"></div></a>
-            <a href="#"><div class="list_dog_2"><img src="{% static 'images/list_circle/gr_05.png' %}" alt="" class="pg_dog_2"></div></a>
-            <a href="#"><div class="list_dog_3"><img src="{% static 'images/list_circle/gr_08.png' %}" alt="" class="pg_dog_3"></div></a>
-            <a href="#"><div class="list_dog_4"><img src="{% static 'images/list_circle/gr_09.png' %}" alt="" class="pg_dog_4"></div></a>
-            <a href="#"><div class="list_dog_5"><img src="{% static 'images/list_circle/gr_10.png' %}" alt="" class="pg_dog_5"></div></a>
+        <div class="flex_container">
+            <div class="list_dog_1"><a href="{% url 'info_dog_1' %}"><img src="{% static 'images/list_icon/dog_05.jpg' %}" alt="" class="pg_dog_1"></a>謹慎 83%</br>親和 70%</div>
+            <div class="list_dog_2"><a href="{% url 'info_dog_2' %}"><img src="{% static 'images/list_icon/dog_06.jpg' %}" alt="" class="pg_dog_2"></a>外向 88%</br>親和 73%</div>
+            <div class="list_dog_3"><a href="{% url 'info_dog_3' %}"><img src="{% static 'images/list_icon/dog_07.jpg' %}" alt="" class="pg_dog_3"></a>溫順 84%</br>外向 75%</div>
+            <div class="list_dog_4"><a href="{% url 'info_dog_4' %}"><img src="{% static 'images/list_icon/dog_08.jpg' %}" alt="" class="pg_dog_4"></a>冷靜 20%</br>謹慎 15%</div>
+            <div class="list_dog_5"><a href="{% url 'info_dog_5' %}"><img src="{% static 'images/list_icon/dog_09.jpg' %}" alt="" class="pg_dog_5"></a>冷靜 10%</br>親和 80%</div>
         </div>
         <hr class="line" />
         <h1>南部</h1>
-        <div class="flex_container_2">
-            <a href="#"><div class="list_dog_1"><img src="{% static 'images/list_circle/gr_11.png' %}" alt="" class="pg_dog_1"></div></a>
-            <a href="#"><div class="list_dog_2"><img src="{% static 'images/list_circle/gr_12.png' %}" alt="" class="pg_dog_2"></div></a>
-            <a href="#"><div class="list_dog_3"><img src="{% static 'images/list_circle/gr_07.png' %}" alt="" class="pg_dog_3"></div></a>
-            <a href="#"><div class="list_dog_4"><img src="{% static 'images/list_circle/gr_13.png' %}" alt="" class="pg_dog_4"></div></a>
-            <a href="#"><div class="list_dog_5"><img src="{% static 'images/list_circle/gr_08.png' %}" alt="" class="pg_dog_5"></div></a>
+        <div class="flex_container">
+            <div class="list_dog_1"><a href="{% url 'info_dog_1' %}"><img src="{% static 'images/list_icon/dog_10.jpg' %}" alt="" class="pg_dog_1"></a>親和 94%</br>冷靜 52%</div>
+            <div class="list_dog_2"><a href="{% url 'info_dog_2' %}"><img src="{% static 'images/list_icon/dog_05.jpg' %}" alt="" class="pg_dog_2"></a>謹慎 83%</br>親和 70%</div>
+            <div class="list_dog_3"><a href="{% url 'info_dog_3' %}"><img src="{% static 'images/list_icon/dog_06.jpg' %}" alt="" class="pg_dog_3"></a>外向 88%</br>親和 73%</div>
+            <div class="list_dog_4"><a href="{% url 'info_dog_4' %}"><img src="{% static 'images/list_icon/dog_07.jpg' %}" alt="" class="pg_dog_4"></a>溫順 84%</br>外向 75%</div>
+            <div class="list_dog_5"><a href="{% url 'info_dog_5' %}"><img src="{% static 'images/list_icon/dog_08.jpg' %}" alt="" class="pg_dog_5"></a>冷靜 20%</br>謹慎 15%</div>
         </div>
     </div>
 </body> 

@@ -33,33 +33,42 @@
     <div class="content">            
         <img class="cat_solid" src="{% static 'images/cat_solid.svg' %}" alt="一張圖片">
         <h2 class="text">💨流浪動物中心 | 貓咪列表</h2>
-        <p>*** 若您經評估確認想領養貓咪的話，請不要錯過我們🤗 ***</p><br/>       
+        {% comment %} <p>*** 若您經評估確認想領養貓咪的話，請不要錯過我們🤗 ***</p> {% endcomment %}
+        <p class="explain">以下列出合作的領養中心的貓咪測驗結果，圖示呈現方式為：測驗結果最具代表的兩項性格之相對應顏色。<br/>
+            滑鼠移至圖示上方即出現貓咪實際照片，點擊後便可深入了解相關資訊，若有興趣領養可再點擊連結至領養中心的官方網站，方便您與他們聯繫。</p><br/>       
         <h1>北部</h1>
         <div class="flex_container">
-            <a href="{% url 'info_cat_1' %}"><div class="list_cat_1"><img src="{% static 'images/list_circle/gr_07.png' %}" alt="" class="pg_cat_1"></div></a>
-            <a href="#"><div class="list_cat_2"><img src="{% static 'images/list_circle/gr_04.png' %}" alt="" class="pg_cat_2"></div></a>
-            <a href="#"><div class="list_cat_3"><img src="{% static 'images/list_circle/gr_02.png' %}" alt="" class="pg_cat_3"></div></a>
-            <a href="#"><div class="list_cat_4"><img src="{% static 'images/list_circle/gr_10.png' %}" alt="" class="pg_cat_4"></div></a>
-            <a href="#"><div class="list_cat_5"><img src="{% static 'images/list_circle/gr_13.png' %}" alt="" class="pg_cat_5"></div></a>
+            <div class="list_cat_1"><a href="{% url 'info_cat_1' %}"><img src="{% static 'images/list_icon/cat_06.jpg' %}" alt="" class="pg_cat_1"></a>外向 88%</br>溫順 68%</div>
+            <div class="list_cat_2"><a href="{% url 'info_cat_2' %}"><img src="{% static 'images/list_icon/cat_01.jpg' %}" alt="" class="pg_cat_2"></a>溫順 68%</br>謹慎 13%</div>
+            <div class="list_cat_3"><a href="{% url 'info_cat_3' %}"><img src="{% static 'images/list_icon/cat_02.jpg' %}" alt="" class="pg_cat_3"></a>外向 90%</br>冷靜 85%</div>
+            <div class="list_cat_4"><a href="{% url 'info_cat_4' %}"><img src="{% static 'images/list_icon/cat_03.jpg' %}" alt="" class="pg_cat_4"></a>親和 95%</br>冷靜 85%</div>
+            <div class="list_cat_5"><a href="{% url 'info_cat_5' %}"><img src="{% static 'images/list_icon/cat_04.jpg' %}" alt="" class="pg_cat_5"></a>親和 94%</br>溫順 68%</div>
         </div>
         <hr class="line" />
         <h1>中部</h1>
-        <div class="flex_container_2">
-            <a href="#"><div class="list_cat_1"><img src="{% static 'images/list_circle/gr_08.png' %}" alt="" class="pg_cat_1"></div></a>
-            <a href="#"><div class="list_cat_2"><img src="{% static 'images/list_circle/gr_01.png' %}" alt="" class="pg_cat_2"></div></a>
-            <a href="#"><div class="list_cat_3"><img src="{% static 'images/list_circle/gr_11.png' %}" alt="" class="pg_cat_3"></div></a>
-            <a href="#"><div class="list_cat_4"><img src="{% static 'images/list_circle/gr_03.png' %}" alt="" class="pg_cat_4"></div></a>
-            <a href="#"><div class="list_cat_5"><img src="{% static 'images/list_circle/gr_05.png' %}" alt="" class="pg_cat_5"></div></a>
+        <div class="flex_container">
+            <div class="list_cat_1"><a href="{% url 'info_cat_1' %}"><img src="{% static 'images/list_icon/cat_05.jpg' %}" alt="" class="pg_cat_1"></a>謹慎 13%</br>冷靜 54%</div>
+            <div class="list_cat_2"><a href="{% url 'info_cat_2' %}"><img src="{% static 'images/list_icon/cat_06.jpg' %}" alt="" class="pg_cat_2"></a>外向 88%</br>溫順 68%</div>
+            <div class="list_cat_3"><a href="{% url 'info_cat_3' %}"><img src="{% static 'images/list_icon/cat_07.jpg' %}" alt="" class="pg_cat_3"></a>謹慎 83%</br>親和 95%</div>
+            <div class="list_cat_4"><a href="{% url 'info_cat_4' %}"><img src="{% static 'images/list_icon/cat_08.jpg' %}" alt="" class="pg_cat_4"></a>外向 15%</br>溫順 67%</div>
+            <div class="list_cat_5"><a href="{% url 'info_cat_5' %}"><img src="{% static 'images/list_icon/cat_09.jpg' %}" alt="" class="pg_cat_5"></a>外向 90%</br>親和 95%</div>
         </div>
         <hr class="line" />
         <h1>南部</h1>
-        <div class="flex_container_2">
-            <a href="#"><div class="list_cat_1"><img src="{% static 'images/list_circle/gr_09.png' %}" alt="" class="pg_cat_1"></div></a>
-            <a href="#"><div class="list_cat_2"><img src="{% static 'images/list_circle/gr_13.png' %}" alt="" class="pg_cat_2"></div></a>
-            <a href="#"><div class="list_cat_3"><img src="{% static 'images/list_circle/gr_12.png' %}" alt="" class="pg_cat_3"></div></a>
-            <a href="#"><div class="list_cat_4"><img src="{% static 'images/list_circle/gr_05.png' %}" alt="" class="pg_cat_4"></div></a>
-            <a href="#"><div class="list_cat_5"><img src="{% static 'images/list_circle/gr_06.png' %}" alt="" class="pg_cat_5"></div></a>
+        <div class="flex_container">
+            <div class="list_cat_1"><a href="{% url 'info_cat_1' %}"><img src="{% static 'images/list_icon/cat_10.jpg' %}" alt="" class="pg_cat_1"></a>親和 94%</br>冷靜 52%</div>
+            <div class="list_cat_2"><a href="{% url 'info_cat_2' %}"><img src="{% static 'images/list_icon/cat_05.jpg' %}" alt="" class="pg_cat_2"></a>謹慎 13%</br>冷靜 54%</div>
+            <div class="list_cat_3"><a href="{% url 'info_cat_3' %}"><img src="{% static 'images/list_icon/cat_06.jpg' %}" alt="" class="pg_cat_3"></a>外向 88%</br>溫順 68%</div>
+            <div class="list_cat_4"><a href="{% url 'info_cat_4' %}"><img src="{% static 'images/list_icon/cat_07.jpg' %}" alt="" class="pg_cat_4"></a>謹慎 83%</br>親和 95%</div>
+            <div class="list_cat_5"><a href="{% url 'info_cat_5' %}"><img src="{% static 'images/list_icon/cat_08.jpg' %}" alt="" class="pg_cat_5"></a>外向 15%</br>溫順 67%</div>
         </div>
+        {% comment %} <div class="flex_container_2">
+            <a href="#"><div class="list_cat_1"><img src="{% static 'images/list_icon/cat_10.jpg' %}" alt="" class="pg_cat_1"></div></a>
+            <a href="#"><div class="list_cat_2"><img src="{% static 'images/list_icon/cat_05.jpg' %}" alt="" class="pg_cat_2"></div></a>
+            <a href="#"><div class="list_cat_3"><img src="{% static 'images/list_icon/cat_06.jpg' %}" alt="" class="pg_cat_3"></div></a>
+            <a href="#"><div class="list_cat_4"><img src="{% static 'images/list_icon/cat_07.jpg' %}" alt="" class="pg_cat_4"></div></a>
+            <a href="#"><div class="list_cat_5"><img src="{% static 'images/list_icon/cat_08.jpg' %}" alt="" class="pg_cat_5"></div></a>
+        </div> {% endcomment %}
     </div>
 </body> 
 </body>
